@@ -59,7 +59,7 @@ public class SecurityConfig {
     @Bean
     public DaoAuthenticationProvider daoAuthenticationProvider() {
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-        provider.setUserDetailsService(userDetailsService(passwordEncoder())); // PasswordEncoder를 전달하도록 수정
+        provider.setUserDetailsService(userDetailsService(passwordEncoder()));
         provider.setPasswordEncoder(passwordEncoder());
         return provider;
     }
