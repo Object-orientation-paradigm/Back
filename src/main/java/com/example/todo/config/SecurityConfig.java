@@ -1,6 +1,5 @@
 package com.example.todo.config;
 
-
 import com.example.todo.filter.JwtFilter;
 import com.example.todo.repository.UserRepository;
 import com.example.todo.service.JwtService;
