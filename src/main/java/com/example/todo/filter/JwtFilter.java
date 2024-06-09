@@ -49,6 +49,7 @@ public class JwtFilter extends OncePerRequestFilter {
                 SecurityContextHolder.getContext().setAuthentication(authenticationToken);
             }
         }
+                
         chain.doFilter(request, response);
     }
 }
