@@ -16,7 +16,7 @@ public class BaseTimeEntity {
     @CreatedDate
     @Column(updatable = false)
     private LocalDateTime createdAt;
-   public int month;
+    public int month;
 
     @PrePersist
     public void prePersist() {
