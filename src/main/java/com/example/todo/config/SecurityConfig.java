@@ -81,7 +81,6 @@ public class SecurityConfig {
         return http.build();
     }
 
-
     @Bean
     @Lazy
     public JwtFilter jwtFilter() {
