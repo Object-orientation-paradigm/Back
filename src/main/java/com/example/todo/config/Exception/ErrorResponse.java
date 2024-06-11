@@ -9,7 +9,6 @@ public class ErrorResponse {
     public ErrorResponse(RuntimeException e) {
         this.message = e.getMessage();
     }
-
     public ErrorResponse(String message) {
         this.message = message;
     }
