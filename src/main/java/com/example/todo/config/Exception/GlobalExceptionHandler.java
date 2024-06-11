@@ -13,5 +13,4 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleBaseException(BaseException ex) {
         return new ResponseEntity<>(ex.getStatus().getMessage(), HttpStatus.NOT_FOUND);
     }
-
 }
