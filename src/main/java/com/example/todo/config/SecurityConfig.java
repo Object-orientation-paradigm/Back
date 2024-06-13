@@ -1,6 +1,5 @@
 package com.example.todo.config;
 
-
 import com.example.todo.filter.JwtFilter;
 import com.example.todo.repository.UserRepository;
 import com.example.todo.service.JwtService;
@@ -59,7 +58,7 @@ public class SecurityConfig {
     @Bean
     public DaoAuthenticationProvider daoAuthenticationProvider() {
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
-        provider.setUserDetailsService(userDetailsService(passwordEncoder())); // PasswordEncoder를 전달하도록 수정
+        provider.setUserDetailsService(userDetailsService(passwordEncoder()));
         provider.setPasswordEncoder(passwordEncoder());
         return provider;
     }
@@ -81,7 +80,6 @@ public class SecurityConfig {
 
         return http.build();
     }
-
 
     @Bean
     @Lazy

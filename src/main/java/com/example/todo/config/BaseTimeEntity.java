@@ -16,8 +16,7 @@ public class BaseTimeEntity {
     @CreatedDate
     @Column(updatable = false)
     private LocalDateTime createdAt;
-
-   public int month;
+    public int month;
 
     @PrePersist
     public void prePersist() {
@@ -26,6 +25,7 @@ public class BaseTimeEntity {
         }
         this.month = this.createdAt.getMonthValue();
     }
+
 
     @PreUpdate
     public void preUpdate() {

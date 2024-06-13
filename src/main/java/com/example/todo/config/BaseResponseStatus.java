@@ -35,8 +35,6 @@ public enum BaseResponseStatus {
     ITEM_NOT_FOUND(false,4004,"리스트를 찾을수 없습니다"),
     INVALID_STATUS(false,4005,"잘못된 상태입력");
 
-    // 5000 : 필요시 만들어서 쓰세요
-    // 6000 : 필요시 만들어서 쓰세요
     private final boolean isSuccess;
     private final int code;
     private final String message;

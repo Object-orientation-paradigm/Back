@@ -20,5 +20,4 @@ public class ExceptionControllerAdvice {
     protected ErrorResponse unAuthorized(UnAuthorizedException e) {
         return new ErrorResponse(e);
     }
-
 }
